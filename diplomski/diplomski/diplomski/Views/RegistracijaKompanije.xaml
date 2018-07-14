@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diplomski.Views.RegistracijaKompanije">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Osnovni podaci kontakt osobe"/>
+            <Entry Placeholder="Ime" x:Name="enrtyIme"/>
+            <Entry Placeholder="Prezime" x:Name="entryPrezime"/>
+            <Entry Placeholder="Email" x:Name="entryEmail"/>
+            <Entry Placeholder="Password" x:Name="entryPassword"/>
+            <Label Text="Osnovni podaci kompanije"/>
+            <Entry Placeholder="Naziv" x:Name="entryNazivKompanije"/>
+            <Entry Placeholder="Adresa" x:Name="entryAdresaKompanije"/>
+            <Entry Placeholder="Email" x:Name="entryEmailKompanije"/>
+            <Entry Placeholder="Telefon" x:Name="entryTelefonKompanije"/>
+            <Button Text="Registruj se!"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

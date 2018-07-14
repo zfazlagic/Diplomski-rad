@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diplomski.Views.DodajOglas">
+    <ContentPage.Content>
+        <ScrollView Padding="30">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+
+                <Entry Placeholder="Naziv oglasa" x:Name="entryNazivOglasa" Grid.Row="1" Text="{Binding NazivOglasa}"/>
+
+
+                <Entry Placeholder="Pozicija" x:Name="entryPozicija" Grid.Row="3" Text="{Binding Pozicija}"/>
+
+            <Label Text="Opis pozcije"  Grid.Row="4"/>
+                <Editor x:Name="entryOpisPozicije"  Grid.Row="5" HeightRequest="150" Text="{Binding OpisPozicije}"/>
+
+
+            <Label Text="Opis zaposlenika koji se traži" Grid.Row="6"/>
+                <Editor x:Name="entryOpisZaposlenika" Grid.Row="7" HeightRequest="150" Text="{Binding OpisZaposlenika}"/>
+
+            <Label Text="Dodatni opis(nije obavezno)" Grid.Row="8"/>
+                <Editor x:Name="entryDodatniOpis"  Grid.Row="9" HeightRequest="100" Text="{Binding DodatniOpis}"/>
+
+            <Label Text="Datum isteka"  Grid.Row="10"/>
+                <DatePicker x:Naze="pickerDatumIsteka" Grid.Row="11" />
+            <!--<Entry Placeholder="Naziv oglasa" x:Name="entryNazivOglasa" Grid.Column="1" Grid.Row="5"/>-->
+
+
+                <Entry Placeholder="Lokacija" x:Name="entryLokacija" Grid.Row="13" Text="{Binding Lokacija}"/>
+
+
+                <Entry Placeholder="Broj pozicija" x:Name="entryBrojPozicija" Grid.Row="15" Text="{Binding BrojPozicija}"/>
+
+                <Button x:Name="buttonDodajOglas" Text="Dodaj oglas" Grid.Row="16" Command="{Binding DodajOglas}" />
+
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

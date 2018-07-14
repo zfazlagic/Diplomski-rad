@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:diplomski"
+             x:Class="diplomski.Views.MainPage"
+             Title="IT Job Finder">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Username" />
+            <Entry x:Name="usernameEntry" Placeholder="username" />
+            <Label Text="Password" />
+            <Entry x:Name="passwordEntry" Placeholder="password"/>
+            <Button Text="Login" Clicked="Login_Clicked"  />
+            <Label x:Name="messageLabel" />
+        
+        
+            <Label Text="Ne posjeduješ profil? Registruj se!"/>
+            <Button Text="Posloprimca" Clicked="Posloprimac_Clicked"/>
+            <Button Text="Poslodavac" Clicked="Poslodavac_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
